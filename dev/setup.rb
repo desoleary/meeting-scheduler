@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'pathname'
+require 'date'
 require 'rspec/core'
 
 require 'active_support/core_ext/enumerable'
