@@ -4,9 +4,9 @@ module MeetingScheduler
 
     attr_reader :name, :duration, :type
 
-    # @param [String] name meeting name
-    # @param [BigDecimal] duration meeting duration in hours
-    # @param [Symbol] type meeting type and  one of :onsite or :offsite
+    # @param [String] name the name of the meeting
+    # @param [BigDecimal] duration the duration of the meeting in hours
+    # @param [Symbol] type the type of the meeting, one of :onsite or :offsite
     def initialize(name, duration, type)
       type = type.to_sym if type.is_a?(String)
 
