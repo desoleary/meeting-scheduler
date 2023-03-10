@@ -76,7 +76,7 @@ module MeetingScheduler
           ]
         end
 
-        it 'returns no schedule' do
+        it 'returns meetings with least amount of trips' do
           expect(organized_meetings).to eql(<<~TEXT.strip
             Yes, can fit. One possible solution would be:
             9:00 - 12:00 - Meeting 4
