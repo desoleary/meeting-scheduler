@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require File.expand_path('lib/meeting_scheduler/version', __dir__)
+require File.expand_path('lib/meeting-scheduler/version', __dir__)
 
 Gem::Specification.new do |spec|
   spec.authors = ["Desmond O'Leary"]
@@ -20,6 +20,9 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = "#{spec.homepage}/CHANGELOG.md"
+
+  spec.add_runtime_dependency 'activesupport', '~> 7.0.4.2'
+  spec.add_runtime_dependency 'rordash', '~> 0.1.2' # Created myself recently.
 
   spec.add_development_dependency("codecov", "~> 0.6.0")
   spec.add_development_dependency("rake", "~> 13.0.6")

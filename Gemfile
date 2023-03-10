@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in attributes-mapper.gemspec
+# Specify your gem's dependencies in meeting_scheduler.gemspec
 gemspec
 
 gem "rubocop", "~> 1.44.1"
